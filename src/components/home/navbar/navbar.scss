@@ -1,0 +1,81 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    // position: relative;
+    .userInfo{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+        .user_photo{
+            img{
+                display: block;
+                height: 50px;
+                margin: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+.options{
+    position: absolute;
+    top: 80px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    right: 5%;
+    border-radius: 15px;
+    font-size: 17px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    cursor: default;
+    // position: relative;
+    &::after{
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: #ced4da;
+        top: 0px;
+        left: 0px;
+        border-radius: 15px;
+        z-index: -1;
+        filter: blur(5px);
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 10px;
+        border-radius: 10px;
+
+        &:hover{
+            cursor: pointer;
+            background-color: rgb(238, 238, 238);
+        }
+    }
+    .logout{
+        color: red;
+        position: relative;
+        &::after{
+            content: '';
+            background-color: #ced4da;
+            height: 1px;
+            width: 90%;
+            position: absolute;
+            top: -4px;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .user_name{
+        display: none;
+    }
+}
