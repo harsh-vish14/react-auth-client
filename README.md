@@ -82,5 +82,5 @@ $ npm start
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/harsh-vish14)
-- Twitter [@your-twitter](https://twitter.com/Harshvish_14)
+- GitHub [@harsh-vish14](https://github.com/harsh-vish14)
+- Twitter [@Harshvish_14](https://twitter.com/Harshvish_14)
